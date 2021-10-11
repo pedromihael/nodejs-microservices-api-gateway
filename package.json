@@ -1,0 +1,26 @@
+{
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://a87bbd7efbbaf0ced799851b4d6256b6f270a950@github.com/pedromihael/nodejs-microservices-api-gateway.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedromihael/nodejs-microservices-api-gateway/issues"
+  },
+  "homepage": "https://github.com/pedromihael/nodejs-microservices-api-gateway#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.13"
+  }
+}
