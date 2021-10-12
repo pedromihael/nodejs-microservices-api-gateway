@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  api-gateway:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    command: sh -c "yarn start"
+    deploy:
+       restart_policy:
+        condition: on-failure
+        max_attempts: 2
+    volumes:
+      - .:/usr/app
