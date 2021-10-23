@@ -1,12 +1,10 @@
 version: '3'
 
 services:
-  api-gateway:
+  gateway:
     build: 
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
     command: sh -c "yarn start"
     deploy:
        restart_policy:
@@ -14,3 +12,7 @@ services:
         max_attempts: 2
     volumes:
       - .:/usr/app
+    # when network_mode === 'host', the 'localhost' inside the container
+    # is the same 'localhost' in the machine,
+    # which means every redirection to exposed ports will work (see index.js)
+    network_mode: host
