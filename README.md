@@ -6,6 +6,6 @@ The point here is to use the `express-http-proxy` lib to deal with redirections 
 
 ### You'll need docker and docker-compose to run this api gateway.
 
-Run `docker-compose up` and redirect your frontend requests to `https://localhost:3000`.
+Run `docker-compose up` and redirect your frontend requests to `https://localhost:3333.
 
-C ya.
+C ya 👋.
