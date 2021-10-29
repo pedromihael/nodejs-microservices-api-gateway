@@ -6,6 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     command: sh -c "yarn start"
+    depends_on:
+      - kafka
     deploy:
        restart_policy:
         condition: on-failure
